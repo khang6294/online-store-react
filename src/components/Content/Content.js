@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import BrandList from './BrandList'
+import ProductList from './ProductList'
+import {Switch, Route} from 'react-router-dom'
+
 class Content extends Component {
 
-    render(){
-        
+    render(){ 
         return (
             <div style={{marginTop: '100px'}}>
-                <BrandList/>
+                <Switch>
+                    <Route path="/" exact component={BrandList} />
+                    <Route path="/:brandId/products" exact component={ProductList}/>
+                </Switch>
             </div>
         )
     }
