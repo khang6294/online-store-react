@@ -48,8 +48,8 @@ class ProductList extends Component {
             <Card.Group centered>
                 {this.state.products.map(product => {
                     return (
-                        <NavLink to={`/${product._id}/products`}>
-                            <Card key={product._id} raised onClick={() => console.log(product._id)}>
+                        <NavLink key={product._id} to={`${this.props.match.url}/${product._id}`}>
+                            <Card raised onClick={() => console.log(product._id)}>
                                 <Image style={{height:200,backgroundColor:'white'}} src={`${apiUrl}${product.productImg.url}`} />
                                 <Card.Content>
                                     <Card.Header>{product.name}</Card.Header>

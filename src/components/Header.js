@@ -1,14 +1,16 @@
 import React from 'react'
 import {Container,Dropdown,Image,Menu,Input} from 'semantic-ui-react'
-
+import {NavLink} from 'react-router-dom'
 const Header = (props) => (
     <div>
         <Menu fixed='top' inverted>
         <Container>
+            <NavLink to="/">
             <Menu.Item as='a' header>
                 <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
                 Project Name
             </Menu.Item>
+            </NavLink>
             <Menu.Item>
                 <Input className='icon' icon='search' placeholder='Search...' />
             </Menu.Item>

@@ -8,3 +8,56 @@ img {
     height: 100%;
     object-fit: contain;
 }
+
+
+/* 
+    Product.js
+*/
+
+.size___item{
+    border: 2px solid black;
+
+}
+
+.size___item {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    position: relative 
+}
+
+.size___item p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.size___item:hover,
+.size___item:active {
+    cursor: pointer;
+}
+
+
+.size___item-active{
+    height: 40px;
+    width: 40px;
+    border: 3px solid rgb(80, 31, 194);
+    position: relative 
+}
+
+.size___item-active p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.size___item-active:hover,
+.size___item-active:active {
+    cursor: pointer;
+}
